@@ -67,6 +67,42 @@
             position: absolute;
             bottom: 25px;
         }
+        .right-column-container {
+            padding-left: 60px;
+            padding-top: 46px;
+            padding-right: 60px;
+            padding-bottom: 46px;
+        }
+
+        label {
+            display: block;
+            font: normal normal normal 13px/15px Gill Sans MT;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #000000;
+            padding-bottom: 12px;
+        }
+        .input {
+            padding-bottom: 33px;
+        }
+        input {
+            display: block;
+            border: none;
+            width: 100%;
+            padding-left: 0;
+            border-bottom: 1px solid #808080;
+            padding-bottom: 6px;
+        }
+        input:focus {
+            border: none;
+            outline: none;
+            border-bottom: 1px solid #808080;
+        }
+
+        ::-webkit-input-placeholder {
+            font: normal normal normal 18px/21px Gill Sans MT;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #A9A9A9;
+        }
     </style>
 </head>
 <body>
@@ -81,7 +117,30 @@
                 </div>
             </div>
         </div>
-        <div class="right-column">test</div>
+        <div class="right-column">
+            <div class="right-column-container">
+                <div class="input">
+                    <label for="username">USERNAME</label>
+                    <input placeholder="Enter your user name" type="text" id="username" name="username"/>
+                </div>
+                <div class="input">
+                    <label for="email">E-MAIL</label>
+                    <input placeholder="Enter your email" type="text" id="email" name="email"/>
+                </div>
+                <div class="input">
+                    <label for="password">PASSWORD</label>
+                    <input placeholder="Enter your password" type="password" id="password" name="password"/>
+                </div>
+                <div class="input">
+                    <label for="repeat_password">REPEAT PASSWORD</label>
+                    <input placeholder="Enter your password" type="password" id="password" name="password"/>
+                </div>
+                <div class="right-column-bottom-action">
+                    <button class="btn">Get Started</button>
+                    
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
